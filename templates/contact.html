@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us | Teeves International School</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts -->
+    <!--<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">-->
+
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <!-- ================= HEADER / NAV ================= -->
+    <header class="site-header">
+        <nav class="navbar">
+            <div class="logo">TEEVES INTERNATIONAL SCHOOLS</div>
+
+            <button class="menu-toggle">☰</button>
+
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/admissions">Admissions</a></li>
+                <li><a href="/school_life">School Life</a></li>
+                <li><a href="/academics">Academics</a></li>
+                <li><a href="/contact" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ================= HERO ================= -->
+    <section class="page-hero contact-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Contact Us</h1>
+            <p>We’re here to answer your questions and support your journey.</p>
+        </div>
+    </section>
+
+    <!-- ================= CONTACT INFO ================= -->
+    <section class="contact-info-section container">
+        <article class="info-card glass">
+            <h3>Address</h3>
+            <p>
+                123 School Avenue<br>
+                City, State, Country
+            </p>
+        </article>
+
+        <article class="info-card glass">
+            <h3>Phone</h3>
+            <p>
+                +234 800 000 0000<br>
+                +234 811 111 1111
+            </p>
+        </article>
+
+        <article class="info-card glass">
+            <h3>Email</h3>
+            <p>
+                info@teevesschool.com<br>
+                admissions@teevesschool.com
+            </p>
+        </article>
+
+        <article class="info-card glass">
+            <h3>Office Hours</h3>
+            <p>
+                Monday – Friday<br>
+                8:00 AM – 4:00 PM
+            </p>
+        </article>
+    </section>
+
+    <!-- ================= FORM + MAP ================= -->
+    <section class="contact-main container">
+
+        <!-- ===== Contact Form ===== -->
+        <article class="contact-form glass">
+            <h2>Send Us a Message</h2>
+
+            <!-- IMPORTANT: Matches Flask route -->
+            <form method="POST" action="/contact">
+
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number (Optional)</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <select id="subject" name="subject" required>
+                        <option value="">Select a subject</option>
+                        <option value="admissions">Admissions</option>
+                        <option value="academics">Academics</option>
+                        <option value="general">General Enquiry</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="btn-primary">
+                    Send Message
+                </button>
+            </form>
+        </article>
+
+        <!-- ===== Map Placeholder ===== -->
+        <aside class="contact-map glass">
+            <div class="map-placeholder">
+                <p>School Location</p>
+                <span><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.5636001407183!2d7.99333849428014!3d5.017974478140263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x105d59099dacbcdb%3A0x8b3154de90143d8!2sTeeves%20International%20Schools!5e0!3m2!1sen!2sng!4v1770649977428!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></span>
+            </div>
+        </aside>
+
+    </section>
+
+    <!-- ================= CTA ================= -->
+    <section class="contact-cta">
+        <p>We look forward to hearing from you.</p>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
+        <p>&copy; 2026 Teeves International School. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

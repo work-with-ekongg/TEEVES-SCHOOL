@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TEEVES INTERNATIONAL SCHOOLS</title>
+
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="/static/style.css">
+
+    <!-- Accessibility + SEO -->
+    <meta name="description" content="Teeves International Schools – Learn, Lead, Achieve. A modern institution focused on academic excellence and character development.">
+</head>
+
+<body>
+
+<!-- =====================
+     HEADER / NAVIGATION
+===================== -->
+<header>
+    <nav aria-label="Main navigation">
+
+        <!-- Brand -->
+        <div class="logo">TEEVES INTERNATIONAL SCHOOLS</div>
+
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+            <li><a href="/admissions">Admissions</a></li>
+            <li><a href="/school_life">School Life</a></li>
+            <li><a href="/academics">Academics</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+        </ul>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+            ☰
+        </button>
+
+    </nav>
+</header>
+
+<!-- =====================
+     MAIN CONTENT
+===================== -->
+<main>
+
+    <!-- HERO SECTION -->
+    <section id="hero" aria-labelledby="hero-heading">
+        <div class="hero">
+            <h1 id="hero-heading">Welcome to Teeves International Schools</h1>
+            <h2><i>Learn • Lead • Achieve</i></h2>
+
+            <a href="/" class="apply-button">Apply Now</a>
+        </div>
+    </section>
+
+    <!-- DIRECTOR'S MESSAGE -->
+    <section id="from-the-director" aria-labelledby="director-heading">
+        <div class="from-the-director">
+
+            <div class="director-text">
+                <h2 id="director-heading">From the Director’s Desk</h2>
+                <hr>
+                <p>
+                    Welcome to Teeves International Schools, where education meets excellence. As the Director,
+                    I am proud to lead an institution dedicated to fostering a love for learning, cultivating
+                    character, and preparing students for success in a dynamic world.
+                    <br><br>
+                    <strong>Mrs. Imaobong Okon</strong>
+                </p>
+            </div>
+
+            <div class="director-image">
+                <img src="/static/images/Principal.jpg"
+                     alt="Mrs. Imaobong Okon, Director of Teeves International Schools">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ABOUT / VALUES -->
+    <section id="about" aria-labelledby="about-heading">
+        <h2 id="about-heading" class="sr-only">About Teeves International Schools</h2>
+
+        <div class="about">
+
+            <article class="mission">
+                <h3>The Mission</h3>
+                <p>
+                    To be a leading institution that produces holistically developed individuals
+                    with strong moral values and academic excellence.
+                </p>
+            </article>
+
+            <article class="vision">
+                <h3>The Vision</h3>
+                <p>
+                    Teeves International Schools instills discipline, competence, and powerful life skills
+                    to enable students to become impactful individuals in society.
+                </p>
+            </article>
+
+            <article class="core-values">
+                <h3>Our Core Values</h3>
+                <p>Christlike values, integrity, excellence, and discipline.</p>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- CLOSING TAGLINE -->
+    <section id="closing-tagline" aria-labelledby="journey-heading">
+        <div class="closing-tagline">
+            <h2 id="journey-heading">The Journey Starts Here</h2>
+            <p>
+                Excellence alone is not enough — passion, purpose, competence, commitment,
+                and creativity define who we are. We are raising a generation of thinkers and
+                leaders ready to take initiative without hesitation.
+            </p>
+        </div>
+    </section>
+
+</main>
+
+<!-- =====================
+     FOOTER
+===================== -->
+<footer>
+    <p>© 2026 Teeves International Schools. All Rights Reserved.</p>
+    <p>Contact: +234 123 4567 | Email: info@teevesschools.com</p>
+</footer>
+
+<!-- =====================
+     MOBILE NAV SCRIPT
+===================== -->
+<script>
+    const toggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    toggle.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+
+        const expanded = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', !expanded);
+    });
+</script>
+
+</body>
+</html>
